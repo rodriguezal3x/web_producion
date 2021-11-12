@@ -279,3 +279,293 @@ main {
     color: #FFFFFF;
     padding-bottom: 2rem;
 }
+
+
+/* _-----------------***************** roadmap-item **********--------------- */
+.roadmap-item {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 10rem;
+    margin-bottom: 10rem;
+}
+
+.Container-box3 {
+    width: calc((100% - 10rem) / 3);
+    padding: 0 5rem;
+
+}
+
+.Container-box3 img {
+    width: 13rem;
+    height: 13rem;
+}
+
+.Container-box3 h5 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Container-box3 p {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* roadmap-whale */
+.roadmap-whale {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.whale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 101rem;
+    height: 38rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(141.09deg, rgba(219, 190, 255, 0.28) 1.51%, rgba(101, 16, 210, 0.28) 100.88%);
+    opacity: 0.7;
+    border-radius: 70px;
+    padding: 0 7rem;
+}
+
+.whale-container img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.whale h2 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+.whale p {
+    font-weight: 400;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+/* ------------------ Footer --------------- */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.enlaces-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.link-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.link-footer li a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    padding: 0 3rem;
+}
+
+.Coppi-footer h6 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #353E4D;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 60%;
+    }
+
+    .roadmap-item {
+        height: 25rem;
+        padding: 0 9rem;
+    }
+
+    .Container-box3 {
+        width: calc((100% - 10rem) / 3);
+        padding: 0 4rem;
+
+    }
+
+    .Container-box3 img {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .Container-box3 h5 {
+        font-size: 2.5rem;
+    }
+
+    .Container-box3 p {
+        font-size: 1.7rem;
+    }
+
+    .roadmap-whale {
+        padding: 0 10rem;
+    }
+
+    .whale-container {
+        max-width: 70rem;
+        height: 33rem;
+        padding: 0 4rem;
+    }
+
+    .whale-container img {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    .whale h2 {
+        font-size: 2.6rem;
+    }
+
+    .whale p {
+        font-size: 2rem;
+        color: #FFFFFF;
+    }
+
+    /* Footer  */
+    .footer {
+        padding: 0 5rem;
+    }
+
+    .link-footer {
+        padding: 0 1rem;
+    }
+
+    .link-footer li a {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .Coppi-footer h6 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+        color: #353E4D;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    html {
+        font-size: 50%;
+    }
+
+    .footer {
+        padding: 0 3rem;
+    }
+
+    .link-footer li a {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .Container-box3 {
+        width: calc((100% - 6rem) / 3);
+        padding: 0 2rem;
+    }
+
+    .Container-box3 img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .Container-box3 h5 {
+        font-size: 2rem;
+    }
+
+    .Container-box3 p {
+        font-size: 1.6rem;
+    }
+
+    .roadmap-item {
+        flex-direction: column;
+        width: 100%;
+        height: 32rem;
+        text-align: center;
+    }
+
+    .Container-box3{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem ;
+    }
+
+    .roadmap-whale {
+        padding: 0 3rem;
+    }
+
+    .whale-container {
+        max-width: 50rem;
+        height: 33rem;
+        padding: 0 2rem;
+    }
+
+    .whale-container img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .whale h2 {
+        font-size: 2rem;
+    }
+
+    .whale p {
+        font-size: 1.7rem;
+    }
+
+     /* Footer  */
+     .footer {
+        padding: 0 2rem;
+    }
+
+    .enlaces-footer img{
+        width: 6rem;
+    }
+
+    .link-footer {
+        padding: 0 .5rem;
+        flex-wrap:wrap ;
+        display: flex;
+    }
+
+    .link-footer li a {
+        font-size: 1.7rem;
+        padding: 0 .5rem;
+    }
+
+    .Coppi-footer h6 {
+        font-size: 1.4rem;
+    }
+}
