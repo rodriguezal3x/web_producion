@@ -695,7 +695,7 @@ main {
 }
 
 /* container 2 */
-.roadmap-contemt2 {
+.roadmap_contemt2 {
     display: flex;
     flex-direction: column;
     align-items: center;
