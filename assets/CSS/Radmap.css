@@ -254,8 +254,6 @@ main {
     padding-left: 5rem;
 }
 
-
-
 .box_title h2 {
     font-style: normal;
     font-weight: 800;
@@ -271,7 +269,6 @@ main {
     color: #32B6EF;
 }
 
-
 .box_title p {
     font-style: normal;
     font-weight: 400;
@@ -282,7 +279,7 @@ main {
 
 
 /* _-----------------***************** roadmap-item **********--------------- */
-.roadmap-item {
+.roadmap_item {
     height: 30rem;
     width: 100%;
     display: flex;
