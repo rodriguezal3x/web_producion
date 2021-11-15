@@ -1,0 +1,388 @@
+/* --------------------------- Google font  ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* --------------------------- CSS Reset -------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 200vh;
+    background: #020228;
+}
+
+/* ------------------------- Menu Header -------------------------- */
+.menu {
+    height: 7.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    z-index: 10000;
+}
+
+.menu.sticky {
+    background: #441faaf5;
+}
+
+/* ************************* LOGO ************************* */
+.logo {
+    height: 7.3rem;
+    padding: 0 8rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.logo img {
+    height: 100%;
+}
+
+/*  ************************* items ************************* */
+.menu_items {
+    display: flex;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 .5rem;
+    position: relative;
+    border-right: 1px solid #FFF;
+}
+
+.menu_items li a,
+.menu_items li a i {
+    padding: .7rem 1.3rem;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transform: 0.6s;
+}
+
+/* *************************** hover ******************************* */
+.menu_items li a i:hover,
+.menu_items a:hover,
+li.active {
+    background: #441faaf5;
+    /* background-color: rgba(0, 0, 0, .3); */
+    transition: .4s;
+}
+
+.btn_menu {
+    margin-right: 3rem;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* ****************** Animaciones y transisiones ****************** */
+ul.show {
+    top: 6.5rem;
+}
+
+/* ****************** Responsive Media ****************** */
+
+@media screen and (max-width: 952px) {
+    .logo {
+        height: 6.3rem;
+        padding-left: 3.5rem;
+    }
+
+    .menu_items li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: 6.5rem;
+    }
+
+    .btn_menu {
+        display: inline-flex;
+    }
+
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 6.5rem);
+        background: #373B44;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3872cf, #373B44);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3872cf, #373B44);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu_items li {
+        margin: 3rem 0 0 0;
+        line-height: 6rem;
+    }
+
+    .menu_items li:hover {
+        background: none;
+    }
+
+    .menu_items li a i,
+    .menu_items li a {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .menu_items li a i:hover,
+    .menu_items li a:hover {
+        color: rgb(7, 206, 0);
+    }
+
+    .logo {
+        height: 6.3rem;
+        padding-left: 3.5rem;
+    }
+}
+
+@media screen and (max-width:858px) and (orientation: landscape) {
+    .menu_items li {
+        margin: .5rem 0 0 0;
+    }
+
+    .menu_items {
+        overflow: scroll;
+        height: calc(100% -6.5rem);
+    }
+}
+
+/* ------------------------- Fin del NAV MENU -------------------------------------- */
+/************************************************************************************/
+
+/* --------------------------------- Landing header -------------------- */
+.landin_launch {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background: url(/assets/IMG/Landing2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landin_launch img {
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+/************************************************************************************/
+/* --------------------------- main Container ------------------------- */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+.title-faqs {
+    width: 60%;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    padding-top: 5rem;
+    font-weight: 800;
+}
+.text p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    padding-top: 5rem;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.arrow h4 {
+    font-weight: 900;
+    font-size: 2.7rem;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.banner-text{
+    height: 33rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text p{
+    width: 45%;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.discore_mint{
+    width: 100%;
+    height: 60rem;
+    background: url(/assets/IMG/codenumber2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_container3{
+    width: calc(70%) / 4;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+
+.icon_mint{
+    width: 18rem;
+    height: 18rem;
+    padding:0 1.5rem ;
+}
+
+.icon_mint img{
+    width: 100%;
+}
+
+/* ---------------************* btn **********---------------- */
+.btn-1 {
+    background: #32b6ef;
+    width: 32rem;
+    height: 6.2rem;
+    border: none;
+    border-radius: 10px;
+    transition: ease-out 1s;
+    outline: none;
+    border: 4px solid #32B6EF;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-1 a {
+    width: 100%;
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-1 a:hover {
+    color: #32B6EF;
+}
+
+.btn-1:hover {
+    cursor: pointer;
+    color: #FFF;
+    border: 4px solid #FFFFFF;
+}
+
+.btn-1::before {
+    transition: 1s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #FFFFFF;
+}
+
+.btn-1:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/* ------------------ Footer --------------- */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.enlaces-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.link-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.link-footer li a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    padding: 0 2rem;
+}
+
+.Coppi-footer h6 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #353E4D;
+    padding-bottom: 3rem;
+}
