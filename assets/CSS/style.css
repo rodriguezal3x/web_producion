@@ -331,7 +331,7 @@ main {
 .Mint2 .timer .cont-temporizador {
     display: flex;
     position: absolute;
-    top: 27rem;
+    top: 31rem;
     align-items: center;
     justify-content: center;
     margin-left: 8rem;
