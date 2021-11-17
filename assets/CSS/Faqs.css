@@ -185,7 +185,7 @@ ul.show {
     position: relative;
     width: 100%;
     height: 50rem;
-    background: url(/assets/IMG/Landing2.png);
+    background: url(/assets/IMG/banner_link.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,6 +212,9 @@ ul.show {
     text-align: center;
 }
 
+.title-faqs img{
+    width: 30rem;
+}
 .text {
     width: 100%;
     text-align: left;
@@ -229,37 +232,7 @@ ul.show {
     color: #FFFFFF;
     padding-top: 5rem;
 }
-
-.arrow {
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 0;
-}
-
-.arrow h4 {
-    font-weight: 900;
-    font-size: 2.7rem;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.banner-text{
-    height: 33rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-text p{
-    width: 45%;
-    font-size: 3.6rem;
-    line-height: 4.3rem;
-    text-align: center;
-    color: #FFFFFF;
-}
-
+/* Mint Botton */
 .discore_mint{
     width: 100%;
     height: 60rem;
@@ -289,6 +262,7 @@ ul.show {
 
 .icon_mint img{
     width: 100%;
+    box-shadow: rgba(46, 29, 122, 0.25) 0px 14px 28px, rgba(59, 41, 41, 0.22) 0px 10px 10px;
 }
 
 /* ---------------************* btn **********---------------- */
@@ -309,7 +283,7 @@ ul.show {
 .btn-1 a {
     width: 100%;
     font-weight: 700;
-    font-size: 3.3rem;
+    font-size: 3rem;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
@@ -349,33 +323,29 @@ ul.show {
 /* ------------------ Footer --------------- */
 .footer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 5rem;
-    justify-content: center;
-    align-content: center;
 }
 
 .enlaces-footer {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
 .link-footer {
     display: flex;
-    justify-content: space-around;
-    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.link-footer li{
+    padding: 0 1.5rem;
 }
 
 .link-footer li a {
     font-style: normal;
     font-weight: 800;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #FFFFFF;
-    padding: 0 2rem;
 }
 
 .Coppi-footer h6 {
@@ -386,3 +356,132 @@ ul.show {
     color: #353E4D;
     padding-bottom: 3rem;
 }
+
+/* Media */
+@media screen and (max-width: 952px) {
+    .title-faqs {
+        width: 80%;
+        text-align: center;
+    }
+
+    .box_container3{
+        width: calc(100%) / 4;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .landin_launch {
+        height: 35rem;
+    } 
+    
+    .title-faqs {
+        width: 80%;
+        padding: 0;
+    }
+
+    .title-faqs img{
+        width: 15rem;
+    }
+       
+    .text h2 {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+    .text p {
+        font-weight: 400;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+    }
+
+    /* Mint Botton */
+    .discore_mint{
+        height: 50rem;
+    }
+    
+    .box_container3{
+        width: calc(80%) / 4;
+    }
+    .icon_mint{
+        width: 15rem;
+        height: 15rem;
+    }
+    .link-footer li{
+        padding: 0 1rem;
+    }
+    
+    .link-footer li a {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .landin_launch {
+        position: relative;
+        height: 100Vh;
+        background: url(/assets/IMG/banner_movil.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .title-faqs {
+        width: 90%;
+    }
+    
+    .title-faqs img{
+        width: 20rem;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .discore_mint{
+        height: 70rem;
+        margin-top: 2rem;
+    }
+    
+    .box_container3{
+        width: calc(100%) / 2;
+        flex-wrap: wrap;
+        height: 60%;
+        padding-bottom: 0rem;
+    }
+  
+    .icon_mint{
+        flex: 50%;
+        width: 10rem;
+        height: 10rem;
+        padding: 1rem ;
+    }
+    
+    .link-footer li a {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+    /* ------------------ Footer --------------- */
+    .footer {
+        width: 100%;
+    }
+    
+    .enlaces-footer {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .link-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .link-footer li{
+        padding: 1rem 1rem;
+    }
+    .link-footer li a {
+        font-size: 1.9rem;
+    }
+}
+
