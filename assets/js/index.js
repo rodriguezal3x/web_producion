@@ -1,51 +1,3 @@
-// ------------------------ Scroll Reveal --------------
-
-// FAQS Scroll
-window.sr = ScrollReveal();
-
-    sr.reveal('.landin_launch',{
-        duration: 2000,
-        origin: 'bottom',
-        distance:'-100px',
-        reset: true,
-    });
-    
-    sr.reveal('.title-faqs img',{
-        duration: 2000,
-        distance:'-100px',
-        reset: true,
-    });
-
-    sr.reveal('.text h2, p',{
-        duration: 3000,
-        origin: 'top',
-        distance:'-50px',
-        reset: true,
-        scale: 0.85 
-    });
-
-    sr.reveal('.discore_mint',{
-        duration: 1000,
-        reset: true,
-        scale: 0.75 
-    });
-
-    sr.reveal('.icon_mint',{
-        duration: 3500,
-        origin: 'bottom',
-        distance:'50px',
-        reset: true  
-    });
-
-    sr.reveal('.btn-1',{
-        duration: 3500,
-        origin: 'bottom',
-        distance:'50px',
-        reset: true  
-    });
-    
-
-
 // -------------------- Nav
 const btn_menu = document.querySelector('.btn_menu')
 if (btn_menu) {
@@ -55,107 +7,99 @@ if (btn_menu) {
     })
 };
 
-// -------------------- Timmer
 window.addEventListener("scroll", function(){
     var menu = document.querySelector(".menu");
     menu.classList.toggle("sticky", this.window.scrollY > 0);
 });
 
-let dias = 17;
-let horas = 0;
-let minutos = 0;
-let segundos = 0;
-cargarSegundos()
+//  -----------------------  Date 
+const getRemainTime = deadline => {
+    let now = new Date(),
+        remainTime = (new Date(deadline) - now + 1000) / 1000,
+        remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
+        remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
+        remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2),
+        remainDays = Math.floor(remainTime / (3600 * 24));
 
-// Defenir y Ejecutando  Segundos 
-function cargarSegundos() {
-    let txtSegundos;
-
-    if (segundos < 0) {
-        segundos = 59;
+    return {
+        remainTime,
+        remainSeconds,
+        remainMinutes,
+        remainHours,
+        remainDays
     }
-    // Mostando Segundos en Pantallas
-    if (segundos < 10) {
-        txtSegundos = '0${segundos}';
-    } else {
-        txtSegundos = segundos;
-    }
-    document.getElementById('segundos').innerHTML = txtSegundos;
-    segundos--;
-    cargarMinutos(segundos);
-}
+};
 
-// Definimos y Ejecutamos los minutos
-function cargarMinutos(segundos){
-    let txtMinutos;
+const countdown = (deadline, d, h, m, s, finalMenssage) => {
+    const dias = document.getElementById(d);
+    const horas = document.getElementById(h);
+    const minutos = document.getElementById(m);
+    const segundos = document.getElementById(s);
 
-    if(segundos == -1 && minutos !== 0){
-        setTimeout(() => {
-            minutos--;
-        },500)
-    }else if(segundos == -1 && minutos == 0){
-        setTimeout(() => {
-            minutos = 59;
-        },500)
-    }
+    const timmerUpdate = setInterval( () => {
+        let t = getRemainTime(deadline);
+        dias.innerHTML = `${t.remainDays}`;
+        horas.innerHTML = `${t.remainHours}`;
+        minutos.innerHTML = `${t.remainMinutes} `;
+        segundos.innerHTML = `${t.remainSeconds}`;
 
-    // mostar Minutos en pantalla
-    if(minutos < 10){
-        txtMinutos = '0${minutos}';
-    }else{
-        txtMinutos = minutos;
-    }
-    document.getElementById('minutos').innerHTML = txtMinutos;
+        if (t.remainTime <= 1) {
+            clearInterval(timmerUpdate);
+            el.innerHTML = finalMenssage;
+        }
+    }, 1000)
+};
 
-    cargarHoras(segundos,minutos);
-}
+countdown('nov 30 2021 23:59:59 GMT-0600', 'dias', 'horas', 'minutos','segundos', 'Mint your NFT');
 
-// Definimos y Ejecutamos los horas
-function cargarHoras(segundos,minutos){
-    let txtHoras;
+// ------------------------ Scroll Reveal --------------
+window.sr = ScrollReveal();
 
-    if(segundos == -1 && minutos == 0 && horas !== 0){
-        setTimeout(() => {
-            horas--;
-        },500)
-    }else if(segundos == -1 && minutos == 0 && horas == 0){
-        setTimeout(() => {
-            horas = 24;
-        },500)
-    }
+// Home 
+sr.reveal('.landin', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-100px',
+    reset: true
+});
 
-    // Mostar horas en pantalla
-    if(horas < 10){
-        txtHoras = '0${horas}';
-    }else{
-        txtHoras = horas;
-    }
-    document.getElementById('horas').innerHTML = txtHoras;
-    cargarDias(segundos,minutos,horas);
-}
+sr.reveal('.Mint', {
+    duration: 1000,
+    origin: 'top',
+    distance:'-50px',
+    reset: true,
+    scale: 0.85 
+});
 
-// Definimos y Ejecutamos los dias
-function cargarDias(segundos,minutos,horas){
-    let txtdias;
+sr.reveal('.baner1', {
+    duration: 2000,
+    origin: 'buttom',
+    distance:'50px',
+    reset: true,
+    scale: 0.75 
+});
 
-    if(segundos == -1 && minutos == 0 && horas == 0 && dias !== 0){
-        setTimeout(() => {
-            dias--;
-        },500)
-    }else if(segundos == -1 && minutos == 0 && horas == 0 && dias == 0){
-        setTimeout(() => {
-            dias = 2;
-        },500)
-    }
+sr.reveal('.content-2', {
+    duration: 1000,
+    // reset: true,
+    scale: 0.85 
+});
 
-    // Mostar dias en pantalla
-    if(dias < 10){
-        txtdias = '0${dias}';
-    }else{
-        txtdias = dias;
-    }
-    document.getElementById('dias').innerHTML = txtdias;
-}
+sr.reveal('.container-box1', {
+    duration: 1000,
+    // reset: true,
+    scale: 0.75 
+});
 
-// Ejecutamos casa Segundo
-setInterval(cargarSegundos, 1000);
+sr.reveal('.content2 ', {
+    duration: 1000,
+    // reset: true,
+    scale: 0.85 
+});
+
+sr.reveal('.Conteiner_box2', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
