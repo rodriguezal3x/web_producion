@@ -103,3 +103,38 @@ sr.reveal('.Conteiner_box2', {
     distance:'-50px',
     scale: 0.75 
 });
+
+sr.reveal('.roadmap-item', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
+
+sr.reveal('.roadmap-whale', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
+
+sr.reveal('.banner-discord', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
+
+sr.reveal('.faqs', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
+
+sr.reveal('.footer', {
+    duration: 2000,
+    origin: 'top',
+    distance:'-50px',
+    scale: 0.75 
+});
