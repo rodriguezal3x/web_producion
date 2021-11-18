@@ -200,6 +200,7 @@ ul.show {
 /* --------------------------- main Container ------------------------- */
 main {
     width: 100%;
+    margin-top: 15rem;
 }
 
 /* ------------------------- Mint -------------------------------------- */
@@ -510,7 +511,7 @@ main {
 
 .content2 img{
     width: 100%;
-    margin-bottom: 3rem;
+    padding-top: 5rem;
 }
 
 .content2 h3 {
@@ -524,6 +525,7 @@ main {
     font-weight: normal;
     font-size: 2.8rem;
     color: #32B6EF;
+    padding-bottom: 5rem;
 }
 
 .container-box1 {
@@ -622,7 +624,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    padding-bottom: 15rem;
 }
 
 .Conteiner_box2 {
