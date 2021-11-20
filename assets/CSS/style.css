@@ -37,7 +37,8 @@ body {
 }
 
 .menu.sticky {
-    background: #441faaf5;
+    background: #060839;
+    /* background: #441faaf5; */
 }
 
 /* ************************* LOGO ************************* */
@@ -191,6 +192,22 @@ ul.show {
 }
 
 .landin img {
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.landin_launch {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background: url(/assets/IMG/banner_link.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landin_launch img {
     width: 100%;
     padding: 0;
     margin: 0
@@ -943,6 +960,12 @@ main {
     font-size: 2.4rem;
     line-height: 2.4rem;
     color: #FFFFFF;
+}
+.faqs-content p {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding-top: 5rem;
 }
 
 /* ------------------ Footer --------------- */
