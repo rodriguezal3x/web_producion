@@ -7,7 +7,7 @@ if (btn_menu) {
     })
 };
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     var menu = document.querySelector(".menu");
     menu.classList.toggle("sticky", this.window.scrollY > 0);
 });
@@ -36,7 +36,7 @@ const countdown = (deadline, d, h, m, s, finalMenssage) => {
     const minutos = document.getElementById(m);
     const segundos = document.getElementById(s);
 
-    const timmerUpdate = setInterval( () => {
+    const timmerUpdate = setInterval(() => {
         let t = getRemainTime(deadline);
         dias.innerHTML = `${t.remainDays}`;
         horas.innerHTML = `${t.remainHours}`;
@@ -50,7 +50,7 @@ const countdown = (deadline, d, h, m, s, finalMenssage) => {
     }, 1000)
 };
 
-countdown('nov 30 2021 23:59:59 GMT-0600', 'dias', 'horas', 'minutos','segundos', 'Mint your NFT');
+countdown('dec 20 2021 09:00:00 GMT-0600', 'dias', 'horas', 'minutos', 'segundos', 'Mint your NFT');
 
 // ------------------------ Scroll Reveal --------------
 window.sr = ScrollReveal();
@@ -66,75 +66,75 @@ sr.reveal('.landin', {
 sr.reveal('.Mint', {
     duration: 1000,
     origin: 'top',
-    distance:'-50px',
+    distance: '-50px',
     reset: true,
-    scale: 0.85 
+    scale: 0.85
 });
 
 sr.reveal('.baner1', {
     duration: 2000,
     origin: 'buttom',
-    distance:'50px',
+    distance: '50px',
     reset: true,
-    scale: 0.75 
+    scale: 0.75
 });
 
 sr.reveal('.content-2', {
     duration: 1000,
     // reset: true,
-    scale: 0.85 
+    scale: 0.85
 });
 
 sr.reveal('.container-box1', {
     duration: 1000,
     // reset: true,
-    scale: 0.75 
+    scale: 0.75
 });
 
 sr.reveal('.content2 ', {
     duration: 1000,
     // reset: true,
-    scale: 0.85 
+    scale: 0.85
 });
 
 sr.reveal('.Conteiner_box2', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
 
 sr.reveal('.roadmap-item', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
 
 sr.reveal('.roadmap-whale', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
 
 sr.reveal('.banner-discord', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
 
 sr.reveal('.faqs', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
 
 sr.reveal('.footer', {
     duration: 2000,
     origin: 'top',
-    distance:'-50px',
-    scale: 0.75 
+    distance: '-50px',
+    scale: 0.75
 });
